@@ -1,3 +1,5 @@
+from strings import *
+
 
 def main():
   text = "Welcome to Snakes on a Train, a Python parable. \n\nPlease select the what you would like to do:"
@@ -6,10 +8,15 @@ def main():
   user_input = input("Your selection: ")
   print(user_input)
   #breakpoint()
+  
   if user_input == "M" :
-    print("Its Math")
+    print("TODO make math module")
+  elif user_input == "S":
+    string_machine()
+  elif user_input == "C":
+    print("TODO make collection module")
   else:
-    print("Its not Math")
+    print("No idea what you're prattling on about mate")
 
 
 if __name__ == '__main__':
