@@ -1,12 +1,13 @@
 from strings import *
 
 
+#TODO test framework
+
 def main():
   text = "Welcome to Snakes on a Train, a Python parable. \n\nPlease select the what you would like to do:"
-  options = "\nMath = M, Strings = S, Collections = C"
+  options = "\nMath = M, Strings = S, Classes = C"
   print(text, options)
   user_input = input("Your selection: ")
-  print(user_input)
   #breakpoint()
   
   if user_input == "M" :
@@ -14,7 +15,7 @@ def main():
   elif user_input == "S":
     string_machine()
   elif user_input == "C":
-    print("TODO make collection module")
+    print("TODO make Class/Inheritance module")
   else:
     print("No idea what you're prattling on about mate")
 
